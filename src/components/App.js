@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Projects from './Project.js';
 import SocialProfiles from './SocialProfile.js';
 import Title from './Title.js';
-import profile from './assets/profile.png';
+import profile from '../assets/profile.png';
 
 
 class App extends Component {
