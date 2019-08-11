@@ -48,9 +48,7 @@ class App extends Component {
             <div>
                 <h1>Hello</h1>
                 <p>My Name is David</p>
-                {
-                    this.state.displayExtra ? <Title /> : null
-                }
+                <Title /> 
                 <p>I am always looking to work on projects so I can make some cash</p>
                 {
                     this.state.displayExtra ? (
