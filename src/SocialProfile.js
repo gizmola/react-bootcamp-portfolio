@@ -20,7 +20,6 @@ class SocialProfiles extends Component {
 
 class SocialProfile extends Component {
     render() {
-        console.log('this.props',this.props);
         const { link, image } = this.props.socialProfile; 
         return (
             <span>

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Projects from './Project.js';
 import SocialProfiles from './SocialProfile.js';
+import Title from './Title.js';
 import profile from './assets/profile.png';
+
 
 class App extends Component {
     state = { 
@@ -45,12 +47,17 @@ class App extends Component {
         return (
             <div>
                 <h1>Hello</h1>
-                <p>We are learning React</p>
+                <p>My Name is David</p>
+                {
+                    this.state.displayExtra ? <Title /> : null
+                }
+                <p>I am always looking to work on projects so I can make some cash</p>
                 {
                     this.state.displayExtra ? (
                         <div>
                             <img src={profile} alt='profile' className='profile'/>
-                            <p>Here's some State Information:  My name is David!</p>
+                            <p>Here's some State Information:  Puggles are Great Dogs!</p>
+                            <p>They go "Woooofff"</p>
                             <button onClick={this.toggleExtra}>Show less</button>
                         </div>
                     ) : 
