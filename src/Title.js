@@ -25,7 +25,7 @@ class Title extends Component {
 
     // Queue Change the title, fadeIn after 4 s
     animateTitle = () => {
-          this.titleInterval = setInterval(() => {
+        this.titleInterval = setInterval(() => {
             const titleIndex = ++this.state.titleIndex % TITLES.length;
             this.setState({ titleIndex: titleIndex, fadeIn: true })
             // Queue fadeOut after 2s
