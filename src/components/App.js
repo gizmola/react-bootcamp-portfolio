@@ -3,17 +3,18 @@ import Projects from './Project.js';
 import SocialProfiles from './SocialProfile.js';
 import Title from './Title.js';
 import profile from '../assets/profile.png';
+import Jokes from './Jokes.js';
 
 
 class App extends Component {
     state = { 
-        displayExtra: false
+        displayExtra: false,
+        displayTenMore: false
     }
 
     toggleExtra = () => {
         this.setState({ displayExtra: !this.state.displayExtra})
     }
-
 
     /*
     constructor() {
@@ -48,14 +49,15 @@ class App extends Component {
             <div>
                 <h1>Hello</h1>
                 <p>My Name is David</p>
-                <Title /> 
-                <p>I am always looking to work on projects so I can make some cash</p>
+                <Title />
+                <p>I am always looking to work on interesting projects</p>
                 {
                     this.state.displayExtra ? (
                         <div>
                             <img src={profile} alt='profile' className='profile'/>
                             <p>Here's some State Information:  Puggles are Great Dogs!</p>
                             <p>They go "Woooofff"</p>
+
                             <button onClick={this.toggleExtra}>Show less</button>
                         </div>
                     ) : 
@@ -69,6 +71,8 @@ class App extends Component {
                 <Projects />
                 <hr />
                 <SocialProfiles />
+                <hr />
+                <Jokes /> 
             </div>
             
         )

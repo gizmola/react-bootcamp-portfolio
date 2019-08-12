@@ -4,7 +4,6 @@ import { blockStatement } from '@babel/types';
 
 
 const Project = props => {
-    console.log('props', props);
     const { title, description, link, image} = props.project;
     return (
         <div style={{ display: 'inline-block', width:300, margin: 10 }}>
